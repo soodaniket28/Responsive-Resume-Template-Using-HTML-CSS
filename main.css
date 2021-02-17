@@ -1,0 +1,563 @@
+header{
+	background-image: url(background.jpg);
+	height: 65vh;
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.8;
+}
+
+body{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+#hamBurger{
+	display: none;
+}
+
+#nav{
+	margin: 0 !important;
+
+}
+
+.horizontal-list li{
+	margin: 7px;
+	margin-left: 9px;
+	display: inline-block;
+	font-size: 18px;
+	list-style: none;
+	text-shadow: 1px 1px grey;
+}
+
+.horizontal-list[id="social"] a{
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.horizontal-list[id="social"] a:hover{
+	box-shadow: 1px 1px 4px 4px rgba(230, 200, 200, 0.4);
+}
+
+
+.horizontal-list[id="nav"] a:hover{
+	color:lightgrey;
+	/*text-decoration: underline;*/
+	transition-duration: 0.5s;
+}
+
+#myPhoto img:hover{
+	box-shadow: 2px 2px 5px 5px rgba(230,200,200,0.4);
+}
+
+
+.horizontal-list{
+	text-align: center;
+}
+
+.horizontal-list a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-family: Comic Sans MS;
+}
+
+#navDiv:target{
+	height: 40vh;
+}
+
+#navDiv{
+	border-radius: 10%;
+	position: fixed;
+	/*border: 3px solid white;*/
+	height: 0;
+	overflow: scroll;
+	width: 210px;
+	top: 30px;
+	right: 20px;
+	transition: 0.5s ease-in-out;
+	/*display: none;*/
+}
+#navDiv1{
+	margin: 3px;
+	width: 90%;
+	height: 40px;
+	/*border: 1px solid white;*/
+}
+
+#navDiv1 a{
+	color: rgb(224, 151, 231);
+	text-shadow: 1px 1px 2px black;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: comic sans ms;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+#navDiv1 a:hover{
+	font-size: 24px;
+}
+
+#myName p{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 15vh;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	color: white;
+	font-family: Arial Rounded MT Bold;
+
+}
+
+#myPhoto{
+	margin: auto;
+	text-align: center;
+	margin-top: -17vh;
+	position: relative;
+}
+
+#myPhoto img{
+	height: 30vh;
+	border: 3px solid white;
+	border-radius: 50%;
+	box-shadow: 1px 1px 6px 4px white;
+
+}
+
+
+#about{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#about p{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 2.5px;
+	color: rgb(78, 71, 71, 0.8);
+	text-align: justify;
+	width: 70%;
+	margin-left: 12%;
+	margin-right: 12%;
+	font-size: 20px;
+
+}
+
+section{
+	/*margin: 15px;*/
+	height: auto;
+	padding: 2rem;
+}
+
+
+section:nth-child(2n){
+	background-color:  #9e9b9b29;
+}
+
+#skills{
+
+}
+
+
+.heading {
+	color: rgb(48, 103, 251);
+	text-align: center;
+	font-family: Comic Sans MS;
+	font-size: 40px;
+}
+
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	/*width: 80%;*/
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.skill-box{
+	width: 180px;
+	height: 35px;
+	border-radius: 1rem;
+	background-color: lightgrey;
+	overflow: hidden;
+	box-shadow: 1px 2px 1px 1px #b9b9b9 inset;
+	margin: 1.5rem;
+}
+
+
+.skill-box>div{
+	height: 35px;
+	border-radius: 1rem 0rem 0rem 1rem;
+	box-shadow: 1px 1px 5px 2px #929884;
+
+}
+
+.skill-name{
+	height: 35px;
+	display: flex;
+	align-items: center;
+}
+
+.skill-name span{
+	vertical-align: middle;
+	margin-left: 10px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+
+.fifty-percent{
+	width: 50%;
+	background-color: rgb(245, 76, 50);
+}
+
+.sixty-percent{
+	width: 60%;
+	background-color: rgba(14, 135, 235, 1);
+}
+
+.eighty-percent{
+	width: 80%;
+	background-color: rgb(39, 208, 142);
+}
+
+
+#portfolio-image img{
+	height: 100%;
+	width: 100%;
+}
+
+#portfolio-image{
+	overflow: hidden;
+	margin: 15px;
+	display: inline-block;
+	position: relative;
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.portfolio-data{
+	transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#portfolio-image:hover{
+	box-shadow: 0px 0px 25px lightblue;
+}
+
+#portfolio-image:hover .portfolio-data{
+	color: white;
+	background-color: lightgrey;
+	opacity: 0.5;
+}
+
+#work-exp{
+	/*border: 3px solid black;*/
+}
+
+.timeline{
+	position: relative;
+	width: 75%;
+	margin: 12.5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	/*border: 3px solid black;*/
+	height: auto;
+	padding: 10px;
+}
+
+.timeline-box{
+	position: relative;
+	min-height: 200px;
+	/*border: 3px solid black;*/
+	width: 43%;
+	margin: 3.5%;
+	position: relative;
+}
+
+.timeline-box::after{
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: lightgrey;
+	z-index: 1;
+	top: 28%;
+
+}
+
+.timeline-box:nth-child(2n){
+	left: 50%;
+}
+
+.timeline-box:nth-child(2n)::after{
+	left: -9.35%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	left: 107%;
+}
+
+.timeline-divider{
+	position: absolute;
+	left: 50%;
+	border: 1.2px dashed rgba(85, 191, 223, 0.77);
+	top: 14%;
+	width: 0;
+	height: 62%;
+}
+
+.timeline-divider .traveller{
+	position: sticky;
+	top: 140px;
+	/*To make sticky work, it's compulsary to give top,left,right,or bottom*/
+	z-index: 2;
+}
+
+.timeline-divider .traveller i{
+	color: rgb(48, 103, 251);
+	transform: rotate(90deg);
+	margin-top: -30px;
+	display: block;
+}
+
+#work-expDes{
+	position: absolute;
+	top: 5px;
+	right: 1px;
+}
+
+#work-expDes p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #194b9d;
+}
+
+#work-expCom{
+	position: absolute;
+	top: 26px;
+	right: 1px;
+}
+
+#work-expCom p{
+	font-size: 18px;
+	/*font-weight: bold;*/
+	color: #ec7c22;
+}
+
+#work-expTime{
+	position: absolute;
+	top: 46px;
+	right: 1px;
+}
+
+#work-expTime p{
+	font-size: 18px;
+	/*font-weight: bold;*/
+	color: grey;
+}
+
+#work-expImg{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#work-expImg{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+#work-expImg img{
+	height: 50px;
+	
+	width: 50px;
+	margin: 15px;
+}
+
+#work-expText{
+	position: relative;
+	margin-top: 5px;
+	padding-top: 15px;
+	left: 2px;
+	top: 80px;
+}
+
+#work-expText p{
+	color: grey;
+	font-size: 16px;
+}
+
+#hbContainer{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media screen and (max-width: 750px){
+	.timeline-divider{
+	left: 6%;
+	}
+	.timeline-box:nth-child(n){
+		left: 9%;
+		width: 80%;
+	}
+	.timeline-box:nth-child(n)::after{
+	left: -11.7%;
+	}
+	#nav{
+		display: none;
+	}
+	#hamBurger{
+		display: inline-block;
+		color: white;
+		margin-right: 7px;
+	}
+}
+
+#Contact{
+	background-image: linear-gradient(45deg,rgba(30, 120, 140, 0.93),rgba(80, 12, 200, 0.93));
+	height: auto;
+	padding: 3vw;
+}
+
+#Contact .heading span{
+	color: white;
+}
+
+.IB{
+	display: inline-block;
+}
+
+#formInput::placeholder {
+  font-size: 22px;
+}
+
+#formInput{
+	background-color: transparent;
+	height: 50px;
+	width: 100%;
+	min-width: 70px;
+	border: 0px;
+	border-bottom: 3px solid white;
+	margin: 5px;
+	color: white;
+	font-size: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+#messageForm{
+	width: 40vw;
+	margin: 2vw;
+	margin-left: 5vw;
+	min-width: 70px;
+}
+
+
+.formMessage{
+	height: 40vh;
+}
+
+
+#formSubmit{
+	height: auto;
+	width: 15vw;
+	min-width: 70px;
+	position: absolute;
+	left: 21vw;
+	background-color: transparent;
+	border: 3px solid white;
+}
+
+
+#formSubmit:hover{
+	background-color: white;
+}
+
+#formSubmit:hover span{
+	color: rgba(20,80,200,1);
+}
+
+#formSubmit span{
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+
+#myContact{
+	width: 40vw;
+	margin: 2vw;
+	margin-right: 1vw;
+	height: 35vh;
+	min-width: 70px;
+	/*border: 3px solid white;*/
+	vertical-align: top;
+}
+
+#myContact h3{
+	color: white;
+	font-size: 20px;
+}
+
+
+#myContact p{
+	color: white;
+	font-size: 14px;
+}
+
+#myAddress p{
+	font-size: 18px;
+}
+
+
+@media screen and (max-width: 750px){
+
+	#messageForm, #myContact{
+		width: 75vw;
+	}
+	#messageForm{
+		margin-bottom: 10vh;
+	}
+	#myContact{
+		margin: 5vw;
+	}
+
+	#formSubmit{
+		left: 38%;
+	}
+
+
+}
