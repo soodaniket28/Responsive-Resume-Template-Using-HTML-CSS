@@ -1,1 +1,1 @@
-# Resume-Template-Using-HTML-CSS
+# Responsive-Resume-Template-Using-HTML-CSS
